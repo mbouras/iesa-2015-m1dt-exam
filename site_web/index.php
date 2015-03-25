@@ -26,7 +26,10 @@
                 <nav class="inline-block">
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
-                        <li><a href="detail.html">Détail</a></li>
+                        <?php
+                            foreach ($planets as $key => $value) {?>
+                                <li><a href="detail.php?planet=<?php echo $key ?>"><?php echo $key?></a></li>
+                            <?php } ?>
                     </ul>
                 </nav>
             </div>
