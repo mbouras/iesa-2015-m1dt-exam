@@ -1,6 +1,5 @@
 <?php 
     include 'traitement.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -57,8 +56,8 @@
                 <h2>Plus d'infos sur une planète ?</h2>
                 <p>Saisissez le nom de la planète dans le champ ci-dessous et valider votre recherche en cliquant sur le bouton <span>"Rechercher"</span>.</p>
                 <form name="searchForm" method="post" action="traitement.php">
-                    <input type="text" name="search" value="" />
-                    <input type="submit" name"searchButton" value="Rechercher" />
+                    <input type="text" name="planetSearch" value="" />
+                    <input type="submit" name"search" value="Rechercher" />
                 </form>
             </div>
             <h2>Maps</h2>
