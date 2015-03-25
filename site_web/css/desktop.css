@@ -41,6 +41,19 @@ ul{
 li{
     list-style: none;
 }
+span{
+    font-weight: bold;
+    color: #196E93;
+}
+input{
+    width: 20%;
+    margin: 0 auto;
+    padding: 1%;
+    font-size: 1em;
+    color: #666;
+}
+
+
 
 /*-------------------
 -- = Helper Classes
@@ -123,17 +136,6 @@ section{
     width: 100%;
 }
 
-#search span{
-    font-weight: bold;
-    color: #196E93;
-}
-input{
-    width: 20%;
-    margin: 0 auto;
-    padding: 1%;
-    font-size: 1em;
-    color: #666;
-}
 
 #maps{
     width: 70%;
@@ -152,5 +154,13 @@ footer{
 small{
     display: block;
     text-align: center;
+}
+
+
+/*-------------------
+-- = Page DETAILS
+-------------------*/
+.details #planets .visual{
+    height: 450px;
 }
 

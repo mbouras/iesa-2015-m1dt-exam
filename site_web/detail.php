@@ -2,10 +2,7 @@
     
     include ("traitement.php");
     $planetChoice = $_GET['planet'];
-    echo $planetChoice;
-    
-    // $planetChoiceTable = $planets['Mercure'];
-    // var_dump($planetChoiceTable);
+    //echo $planetChoice;
 
 ?>
 
@@ -34,26 +31,21 @@
                         <li><a href="index.html">Accueil</a></li>
                         <?php
                             foreach ($planets as $key => $value) {?>
-                                <li><a href="detail.php?planete=<?php echo $key ?>"><?php echo $key?></a></li>
+                                <li><a href="detail.php?planet=<?php echo $key; ?>"><?php echo $key?></a></li>
                             <?php } ?>
                     </ul>
                 </nav>
             </div>
         </header>
-        <section>
+        <section class="details">
             <div id="planets">
-                <?php
-                    foreach ($planets as $key => $value) {?>
-                        <p><?php echo $value->description ?></p>
-                    <?php } ?>
-                ?>
-                <h2>PLANETE</h2>
+                <h2><?php echo $planetChoice; ?></h2>
                 <div class="visual">
-                    <img src="" alt=""/>
+                    <img src="<?php echo $planets->$planetChoice->image; ?>" alt=""/>
                 </div>
-                <p>Taille : km de diamètre</p>
-                <p>Distance au soleil : UA</p>
-                <p>Description</p>
+                <p><span>Taille :</span> <?php echo $planets->$planetChoice->taille; ?>km de diamètre</p>
+                <p><span>Distance au soleil :</span> <?php echo $planets->$planetChoice->distance; ?> UA</p>
+                <p><?php echo $planets->$planetChoice->description; ?></p>
             </div>
             <h2>Maps</h2>
             <div id="maps">
