@@ -59,6 +59,12 @@
                     <input type="text" name="planetSearch" value="" />
                     <input type="submit" name"search" value="Rechercher" />
                 </form>
+                <?php
+                    if(isset($_GET['error'])){
+                        $errorMessage = "Désolé, cette planète n'existe pas. Veuillez essayer une nouvelle recherche.";
+                        echo '<p class="error">'.$errorMessage.'</p>';
+                    }
+                ?>
             </div>
             <h2>Maps</h2>
             <div id="maps">

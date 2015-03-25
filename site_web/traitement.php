@@ -8,7 +8,7 @@
     foreach ($planets as $key => $value) {
         array_push($NamePlanetsInTable, mb_strtolower($key));
     }
-    var_dump($NamePlanetsInTable);
+    //var_dump($NamePlanetsInTable);
 
 
     if(isset($_POST['planetSearch'])){
@@ -17,12 +17,12 @@
         $planetNameSearch = mb_strtolower($planetNameSearch);
 
         if(in_array($planetNameSearch, $NamePlanetsInTable)){
-            echo "ca marche";
+            $planetNameSearch = ucfirst($planetNameSearch);
+            header("location:detail.php?planet=$planetNameSearch");
         }
         else{
-            echo "ca marche pas";
+            header("location:index.php?error");
         }
     }
-
 
 ?>

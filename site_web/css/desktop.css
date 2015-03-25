@@ -61,6 +61,10 @@ input{
 .inline-block{
     display: inline-block;
 }
+.error{
+    font-weight: bold;
+    color: #E64100;
+}
 
 
 /*-------------------
