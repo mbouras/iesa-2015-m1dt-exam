@@ -33,4 +33,8 @@
         width: 100%;
         margin-bottom: 10px;
     }
+    #maps{
+        width: 100%;
+        height: 350px;
+    }
 }

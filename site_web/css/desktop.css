@@ -126,6 +126,12 @@ input{
     color: #666;
 }
 
+#maps{
+    width: 70%;
+    height: 520px;
+    margin: 50px auto;
+}
+
 
 /*-------------------
 -- = Footer
