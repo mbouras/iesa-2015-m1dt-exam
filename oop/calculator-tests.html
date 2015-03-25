@@ -12,7 +12,8 @@
             QUnit.test("That Calculator - methods Add success",
                 function(assert){
                     var calculator = new Calculator();
-                    assert.equal(10,calculator.add(4,6),"Addition de 4 + 6");
+                    var total = calculator.result + 6;
+                    assert.equal(total,calculator.add(6),"Addition de 6");
                 }
             );
         </script>
