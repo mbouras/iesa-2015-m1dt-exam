@@ -47,7 +47,7 @@
                                 <p>Taille : <?php echo $value->taille ?> km de diamètre</p>
                                 <p>Distance au soleil : <?php echo $value->distance ?> UA</p>
                                 <p><?php echo substr($value->description, 0, 100);?>…</p>
-                                <a href="detail.html">+ d'infos</a>
+                                <a href="detail.php?planet=<?php echo $key?>">+ d'infos</a>
                             </li>
                         <?php } ?>
                 </ul>
