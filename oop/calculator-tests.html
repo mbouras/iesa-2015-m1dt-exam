@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator : Test TDD</title>
+
+        <link rel="stylesheet" href="qunit/qunit-1.17.1.css">
+        <script src="qunit/qunit-1.17.1.js"></script>
+        <script src="Calculator.js"></script>
+
+        <script>
+            QUnit.test("That Calculator - methods Add success",
+                function(assert){
+                    var calculator = new Calculator();
+                    assert.equal(10,calculator.add(4,6),"Addition de 4 + 6");
+                }
+            );
+        </script>
+    </head>
+    <body>
+        <div id="qunit-fixture"></div>
+        <div id="qunit"></div>
+    </body>
+</html>
