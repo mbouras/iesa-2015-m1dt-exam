@@ -1,1 +1,1 @@
-Calculator.js
+var Calculator = function (){};
