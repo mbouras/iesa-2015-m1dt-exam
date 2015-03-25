@@ -26,7 +26,7 @@ h2{
     border-bottom: 2px solid #666;
 }
 h3{
-    margin:0;
+    margin:0 0 15px;
 }
 p{
     font-size: 0.9em;
@@ -96,6 +96,7 @@ section{
 }
 #planets ul li{
     display: inline-block;
+    vertical-align: top;
     width: 20%;
     margin:0 0 4% 2%;
     padding: 1%;
@@ -112,6 +113,13 @@ section{
 #planets ul li a:hover{
     opacity: 0.6;
     transition : all ease-in-out 0.3s;
+}
+#planets .visual{
+    height: 115px;
+    overflow: hidden;
+}
+#planets img{
+    width: 100%;
 }
 
 #search span{

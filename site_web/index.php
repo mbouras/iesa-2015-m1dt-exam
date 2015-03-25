@@ -1,8 +1,5 @@
 <?php 
-    //include 'traitement.php';
-$json = file_get_contents("planets.json");
-
-var_dump(json_decode($json));
+    include 'traitement.php';
 
 ?>
 
@@ -38,62 +35,19 @@ var_dump(json_decode($json));
             <div id="planets">
                 <h2>Les différentes planètes</h2>
                 <ul>
-                    <li>
-                        <h3><?php //$planetName = $planets->{'Mercure'};?></h3>
-                        <p>Taille : km de diamètre</p>
-                        <p>Distance au soleil : UA</p>
-                        <p>Description (100 1er caract.)</p>
-                        <a href="detail.html">+ d'infos</a>
-                    </li>
-                    <li>
-                        <h3>Planète 1</h3>
-                        <p>Taille</p>
-                        <p>Distance au soleil</p>
-                        <p>Description (100 1er caract.)</p>
-                        <a href="detail.html">+ d'infos</a>
-                    </li>
-                    <li>
-                        <h3>Planète 1</h3>
-                        <p>Taille</p>
-                        <p>Distance au soleil</p>
-                        <p>Description (100 1er caract.)</p>
-                        <a href="detail.html">+ d'infos</a>
-                    </li>
-                    <li>
-                        <h3>Planète 1</h3>
-                        <p>Taille</p>
-                        <p>Distance au soleil</p>
-                        <p>Description (100 1er caract.)</p>
-                        <a href="detail.html">+ d'infos</a>
-                    </li>
-                    <li>
-                        <h3>Planète 1</h3>
-                        <p>Taille</p>
-                        <p>Distance au soleil</p>
-                        <p>Description (100 1er caract.)</p>
-                        <a href="detail.html">+ d'infos</a>
-                    </li>
-                    <li>
-                        <h3>Planète 1</h3>
-                        <p>Taille</p>
-                        <p>Distance au soleil</p>
-                        <p>Description (100 1er caract.)</p>
-                        <a href="detail.html">+ d'infos</a>
-                    </li>
-                    <li>
-                        <h3>Planète 1</h3>
-                        <p>Taille</p>
-                        <p>Distance au soleil</p>
-                        <p>Description (100 1er caract.)</p>
-                        <a href="detail.html">+ d'infos</a>
-                    </li>
-                    <li>
-                        <h3>Planète 1</h3>
-                        <p>Taille</p>
-                        <p>Distance au soleil</p>
-                        <p>Description (100 1er caract.)</p>
-                        <a href="detail.html">+ d'infos</a>
-                    </li>
+                    <?php 
+                        foreach ($planets as $key => $value) { ?>
+                            <li>
+                                <h3><?php echo $key ?></h3>
+                                <div class="visual">
+                                    <img src="<?php echo $value->image ?>" alt="<?php echo $key ?>"/>
+                                </div>
+                                <p>Taille : <?php echo $value->taille ?> km de diamètre</p>
+                                <p>Distance au soleil : <?php echo $value->distance ?> UA</p>
+                                <p><?php echo substr($value->description, 0, 100);?>…</p>
+                                <a href="detail.html">+ d'infos</a>
+                            </li>
+                        <?php } ?>
                 </ul>
             </div>
             <div id="search">
