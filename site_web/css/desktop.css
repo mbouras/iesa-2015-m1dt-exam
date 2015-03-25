@@ -1,0 +1,133 @@
+@font-face{
+    font-family: 'Lato';
+    src: url('../fonts/Lato/Lato-Regular.ttf') format('trueType');
+}
+
+body{
+    margin: 0;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    /*background-color: rgba(0,0,240,0.1);*/
+}
+header{
+    margin: 0;
+    background-color: #fafafa;
+}
+h1{
+    text-transform: uppercase;
+}
+h2{
+    margin-bottom: 40px;
+    color: #666;
+    border-bottom: 2px solid #666;
+}
+h3{
+    margin:0;
+}
+p{
+    font-size: 0.9em;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+/*-------------------
+-- = Helper Classes
+-------------------*/
+.inline-block{
+    display: inline-block;
+}
+
+
+/*-------------------
+-- = Header
+-------------------*/
+#head{
+    width: 75%;
+    margin: 0 auto;
+}
+#logo{
+    width: 25%;
+}
+nav{
+    width: 50%;
+    margin-left: 10%;
+}
+nav ul li{
+    display: inline-block;
+    width: 80px;
+    margin-left: 2%;    
+}
+nav ul li a{
+    display: block;
+    font-size: 1.1em;
+    text-align: center;
+    color: #196E93; 
+}
+nav ul li a:hover{
+    border-bottom: 2px solid #196E93;
+}
+
+
+/*-------------------
+-- = Content
+-------------------*/
+section{
+    width: 75%;
+    margin: 0 auto 50px;
+    padding: 0 2%;
+}
+#planets h3{
+    text-align: center;
+    color: #999;
+}
+#planets ul li{
+    display: inline-block;
+    width: 20%;
+    margin:0 0 4% 2%;
+    padding: 1%;
+    border: 1px solid #ddd;
+}
+#planets ul li a{
+    display: block;
+    margin-top: 25px;
+    padding: 5px;
+    text-align: center;
+    background-color: #196E93;
+    color: #fff;
+}
+#planets ul li a:hover{
+    opacity: 0.6;
+    transition : all ease-in-out 0.3s;
+}
+
+#search span{
+    font-weight: bold;
+    color: #196E93;
+}
+input{
+    width: 20%;
+    margin: 0 auto;
+    padding: 1%;
+    font-size: 1em;
+    color: #666;
+}
+
+
+/*-------------------
+-- = Footer
+-------------------*/
+footer{
+    padding: 2% 0;
+    background-color: #999;
+}
+small{
+    display: block;
+    text-align: center;
+}
+
