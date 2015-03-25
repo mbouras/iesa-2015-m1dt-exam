@@ -10,10 +10,15 @@ body{
 }
 header{
     margin: 0;
-    background-color: #fafafa;
+    background-color: #f2f2f2;
 }
-h1{
+h1{  
+    background: url('../images/logo.png') top left no-repeat transparent;
+    height: 80px;
+    padding-left: 130px;
+    line-height: 80px;
     text-transform: uppercase;
+    color: #196E93;
 }
 h2{
     margin-bottom: 40px;
@@ -52,7 +57,10 @@ li{
     margin: 0 auto;
 }
 #logo{
-    width: 25%;
+    width: 36%;
+}
+#logo a:visited{
+    color: #000;
 }
 nav{
     width: 50%;
