@@ -41,6 +41,10 @@ var Enigma = function (){
     };   
     this.decrypt = function(messageToDecrypt){
         //console.log("decrypt : ça marche aussi");
+
+        // function replaceAll(myString, stringToRemplace, replacementString) {return myString.replace(stringToRemplace,replacementString);
+        // }
+
         var myString = messageToDecrypt;
         myString = myString.replace("j", "a");
         myString = myString.replace("d", "b");
